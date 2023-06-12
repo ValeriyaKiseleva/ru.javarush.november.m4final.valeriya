@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+        http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+
+    <changeSet id="2023_06_09-2220-create_table_country" author="me">
+        <createTable tableName="country">
+            <column name="id" type="int(11)" defaultValue="0">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="code" type="varchar(3) COLLATE utf8mb4_unicode_ci" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="code_2" type="varchar(2) COLLATE utf8mb4_unicode_ci" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="name" type="varchar(52) COLLATE utf8mb4_unicode_ci" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="continent" type="int(11)" defaultValue="0" remarks="0-ASIA, 1-EUROPE, 2-NORTH_AMERICA, 3-AFRICA, 4-OCEANIA, 5-ANTARCTICA, 6-SOUTH_AMERICA">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="region" type="varchar(26) COLLATE utf8mb4_unicode_ci" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="surface_area" type="decimal(10,2)" defaultValue="0.00" >
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="indep_year" type="smallint" defaultValue="NULL" />
+
+            <column name="population" type="int(11)" defaultValue="0" >
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="life_expectancy" type="decimal(3,1)" defaultValue="NULL" >
+            </column>
+
+            <column name="gnp" type="decimal(10,2)" >
+            </column>
+
+            <column name="gnpo_id" type="decimal(10,2)" >
+            </column>
+
+            <column name="local_name" type="varchar(45) COLLATE utf8mb4_unicode_ci" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="government_form" type="varchar(45) COLLATE utf8mb4_unicode_ci" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="head_of_state" type="varchar(60) COLLATE utf8mb4_unicode_ci" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="capital" type="int(11)" >
+            </column>
+
+        </createTable>
+
+        <modifySql dbms="mysql">
+            <append value="ENGINE=INNODB CHARSET=UTF8MB4 COLLATE utf8mb4_unicode_ci"/>
+        </modifySql>
+
+
+    </changeSet>
+
+
+</databaseChangeLog>

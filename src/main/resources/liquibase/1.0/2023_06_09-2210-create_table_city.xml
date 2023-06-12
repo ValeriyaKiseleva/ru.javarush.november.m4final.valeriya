@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+        http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+
+    <changeSet id="2023_06_09-2210-create_table_city" author="me">
+        <createTable tableName="city">
+            <column name="id" type="int(11)" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="name" type="varchar(35) COLLATE utf8mb4_unicode_ci" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="country_id" type="int(11)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="district" type="varchar(20) COLLATE utf8mb4_unicode_ci" defaultValue="">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="population" type="int(11)" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+        <modifySql>
+            <append value="ENGINE=INNODB CHARSET=UTF8MB4 COLLATE utf8mb4_unicode_ci"/>
+        </modifySql>
+
+
+    </changeSet>
+
+
+</databaseChangeLog>

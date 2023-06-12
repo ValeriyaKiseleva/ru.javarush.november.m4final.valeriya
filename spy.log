@@ -1,0 +1,38 @@
+1686592861841|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686593169223|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686593489592|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686593578157|3|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686593779641|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686594339220|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686594561793|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686594882666|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686595174816|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686595710063|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686595856528|3|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686595930213|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596028208|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596124934|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596198269|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596228233|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596251644|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596627232|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596628066|25|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/world|select count(city0_.id) as col_0_0_ from city city0_|select count(city0_.id) as col_0_0_ from city city0_
+1686596628080|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596710296|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596711008|14|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/world|select count(city0_.id) as col_0_0_ from city city0_|select count(city0_.id) as col_0_0_ from city city0_
+1686596711023|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596839707|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596840425|9|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/world|select count(city0_.id) as col_0_0_ from city city0_|select count(city0_.id) as col_0_0_ from city city0_
+1686596840437|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596883611|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596884325|9|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/world|select count(city0_.id) as col_0_0_ from city city0_|select count(city0_.id) as col_0_0_ from city city0_
+1686596884337|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596939201|4|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596940018|10|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/world|select count(city0_.id) as col_0_0_ from city city0_|select count(city0_.id) as col_0_0_ from city city0_
+1686596940032|3|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596969040|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686596969955|9|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/world|select count(city0_.id) as col_0_0_ from city city0_|select count(city0_.id) as col_0_0_ from city city0_
+1686596969968|2|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686597018093|4|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||
+1686597019112|9|statement|connection 0|url jdbc:p6spy:mysql://localhost:3306/world|select count(city0_.id) as col_0_0_ from city city0_|select count(city0_.id) as col_0_0_ from city city0_
+1686597019125|3|commit|connection 0|url jdbc:p6spy:mysql://localhost:3306/world||

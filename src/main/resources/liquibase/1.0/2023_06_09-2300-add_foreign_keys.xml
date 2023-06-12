@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+        http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+
+    <changeSet id="2023_06_09-2300-add_foreign_keys" author="me">
+
+        <addForeignKeyConstraint baseTableName="city" baseColumnNames="country_id"
+                                 constraintName="city_ibfk_1"
+                                 referencedTableName="country" referencedColumnNames="id" onDelete="CASCADE"
+                                 onUpdate="CASCADE"/>
+
+        <addForeignKeyConstraint baseTableName="country" baseColumnNames="capital"
+                                 constraintName="country_ibfk_1"
+                                 referencedTableName="city" referencedColumnNames="id" onDelete="CASCADE"
+                                 onUpdate="CASCADE"/>
+
+
+        <addForeignKeyConstraint baseTableName="country_language" baseColumnNames="country_id"
+                                 constraintName="country_language_ibfk_1"
+                                 referencedTableName="country" referencedColumnNames="id" onDelete="CASCADE"
+                                 onUpdate="CASCADE"/>
+
+    </changeSet>
+
+
+</databaseChangeLog>
